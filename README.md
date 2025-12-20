@@ -136,7 +136,7 @@ pet-adoption-system/
    - Import `database.sql` into your MySQL database
 
 3. **Set up web server**
-   - Place the project in your web server directory (e.g., `htdocs`, `www`)
+   - Place the project in your web server directory (e.g. `htdocs`)
    - Ensure PHP 7.4+ and MySQL are installed
    - Enable mod_rewrite in Apache (for .htaccess)
 
@@ -144,15 +144,7 @@ pet-adoption-system/
    ```bash
    chmod 755 uploads/pets/
    ```
-
-5. **Create Admin User** (Optional)
-   - `create_admin.php` file খুলুন
-   - Line 18-22 এ admin credentials set করুন
-   - Browser এ run করুন: `http://localhost/pet-adoption-system/create_admin.php`
-   - Admin create হয়ে যাবে
-   - **⚠️ IMPORTANT:** Admin create হওয়ার পর `create_admin.php` file delete করুন security এর জন্য
-
-6. **Access the application**
+5. **Access the application**
    - Open browser and navigate to: `http://localhost/pet-adoption-system`
 
 ##  User Types
@@ -185,48 +177,20 @@ pet-adoption-system/
 
 ##  Features
 
-- ✅ User registration and authentication
-- ✅ User profile management (view/edit profile, change password)
-- ✅ Browse available pets
-- ✅ Add/edit/delete pet listings (Owner/Shelter)
-- ✅ Adoption request system
-- ✅ Approve/reject adoption requests
-- ✅ Adoption history tracking
-- ✅ Pet image uploads
-- ✅ Featured pets section (managed by Admin)
-- ✅ Admin panel for site management
-- ✅ Admin can manage featured pets
-- ✅ Admin can view/delete all pets
-- ✅ Responsive design with Bootstrap 5
+-  User registration and authentication
+-  User profile management (view/edit profile, change password)
+-  Browse available pets
+-  Add/edit/delete pet listings (Owner/Shelter)
+-  Adoption request system
+-  Approve/reject adoption requests
+-  Adoption history tracking
+-  Pet image uploads
+-  Featured pets section (managed by Admin)
+-  Admin panel for site management
+-  Admin can manage featured pets
+-  Admin can view/delete all pets
+-  Responsive design with Bootstrap 5
 
-##  Security Features
 
-- Password hashing using PHP `password_hash()`
-- SQL injection prevention with PDO prepared statements
-- XSS protection with input sanitization
-- Session management
-- File upload validation
-- Protected directories with .htaccess
 
-##  Notes
-
-- Default timezone is set to 'Asia/Dhaka' (can be changed in `config/config.php`)
-- Maximum file upload size: 5MB (configurable)
-- Supported image formats: JPEG, PNG, JPG
-- Pet images are stored in `uploads/pets/` directory
-
-##  Troubleshooting
-
-1. **Database connection error**: Check credentials in `config/config.php`
-2. **Image upload fails**: Ensure `uploads/pets/` directory has write permissions
-3. **Session issues**: Check PHP session configuration
-4. **404 errors**: Ensure mod_rewrite is enabled in Apache
-
-##  License
-
-This project is open source and available for educational purposes.
-
----
-
-**Developed with ❤️ for pet adoption**
 
