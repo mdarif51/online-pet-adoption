@@ -92,7 +92,6 @@ pet-adoption-system/
 │       └── main.js            # Custom scripts
 │
 ├── database.sql               # Database schema
-├── create_admin.php           # PHP script for admin creation
 ├── .htaccess                  # Apache configuration
 └── README.md                  # Project documentation
 ```
@@ -190,6 +189,7 @@ pet-adoption-system/
 -  Admin can manage featured pets
 -  Admin can view/delete all pets
 -  Responsive design with Bootstrap 5
+
 
 
 
